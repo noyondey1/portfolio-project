@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+:root{
+    --purple: #784cfb;
+}
+a, li, h2{
+    text-decoration: none;
+    color: black;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background-color: palegreen; */
+}
+.logo{
+    padding: 15px 0;
+    color: var(--purple);
+}
+.navlinks li{
+    list-style: none;
+    display: inline-block;
+}
+.navlinks li a{
+    margin: 0 10px;
+    transition: 0.3s linear;
+    font-weight: 500;
+}
+.navlinks li a:hover{
+    color: var(--purple);
+}
+.btn-1 button{
+    border: none;
+    outline: none;
+    padding: 8px 30px;
+    background: var(--purple);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.btn-1 button:hover{
+    background: none;
+    color: black;
+    border: 1px solid var(--purple);
+    box-shadow: 4px 4px 10px rgb(214, 214, 214);
+}
+/* =======Hero Content======== */
+.hero{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 20px 20px 180px;
+}
+.text{
+    display: grid;
+    gap: 20px;
+    /* grid-template-rows: repeat(3, 1fr); */
+}
+.text h1{
+    font-family: poppins;
+    font-size: 3em;
+}
+.text p{
+    text-align: justify;
+    line-height: 25px;
+}
+.text .btn-2 button{
+    border: none;
+    outline: none;
+    padding: 8px 30px;
+    background: var(--purple);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.btn-2 button:hover{
+    background: none;
+    color: black;
+    border: 1px solid var(--purple);
+    box-shadow: 4px 4px 10px rgb(214, 214, 214);
+}
+.image img{
+    background-size: cover;
+    width: 100%;
+    user-select: none;
+}
+/*==========Main Section========== */
+main{
+    height: 100vh;    
+}
+
+ul{
+    list-style: none;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 280px);
+    justify-content: space-evenly;
+    align-items: center;
+}
+.list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.list li h2{
+    padding-bottom: 30px;
+}
+.list li p{
+    text-align: center;
+}
+.list li:nth-child(1){
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+    align-self: center;
+    width: 30%;
+    justify-self: center;
+}
+.list li:nth-child(3){
+    background: var(--purple);
+    color: white;
+    border-radius: 15px;
+}
+.list li:nth-child(3) h2{
+    color: white;
+}
+.list li:nth-child(3) svg{
+    fill: white;
+}
+li svg{
+    height: 100px;
+}
+/* ==========Footer========== */
+footer{
+    height: auto;
+    width: 100vw;
+    min-width: 1100px;
+    background: var(--purple);
+    position: absolute;
+    color: white;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8em;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3em;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials li a{
+    text-decoration: none;
+    color: white;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color 0.4s ease;
+    padding: 20px 0;
+}
+.socials a:hover i{
+    color: indigo;
+}
+.footer-bottom{
+    background-color: indigo;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+span{
+    color: aqua;
+    font-weight: 200;
+}
